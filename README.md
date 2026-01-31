@@ -69,7 +69,7 @@ We propose a **Bionic Embodied Intelligence** approach inspired by human hand-ey
 
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/Rodimus/ViSA-broncho-nav.git](https://github.com/Rodimus/ViSA-broncho-nav.git)
+git clone [https://github.com/RodimusMeng/ViSA-broncho-nav.git](https://github.com/RodimusMeng/ViSA-broncho-nav.git)
 cd visa-broncho-nav
 
 # 2. Install Python dependencies
