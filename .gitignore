@@ -186,7 +186,10 @@ cython_debug/
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
 #  and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
 # Ruff stuff:
 .ruff_cache/
@@ -205,3 +208,60 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- C++ & CMake 构建垃圾 ---
+CMakeFiles/
+CMakeScripts/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+# 常见的输出目录
+[Bb]in/
+[Ll]ib/
+[Oo]bj/
+[Oo]ut/
+
+# --- 深度学习模型权重 ---
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+models/*
+!models/.gitkeep
+
+# ---  医学影像与数据集 ---
+# 保护患者隐私，同时也避免传大文件
+*.dcm
+*.dicom
+*.nii
+*.nii.gz
+*.mhd
+*.raw
+*.nrrd
+# 避免上传实验录像
+*.mp4
+*.avi
+*.mov
+*.mkv
+# 忽略整个数据文件夹
+data/
+datasets/
+
+# --- 机器人操作系统 ---
+# 如果你之后接入 ROS，这些是编译产生的
+devel/
+install/
+build_isolated/
+devel_isolated/
+*.bag
